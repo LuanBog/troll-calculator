@@ -50,7 +50,7 @@ const buttonClick = (text) => {
     if(screen === '0') 
         screen = text;
     else
-        screen = screen + text;
+        screen = text + screen;
 
     screenAnswer.innerHTML = screen;
 }
