@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Legit Calculator</title>
+</head>
+<body>
+    <div id="calculator">
+        <div class="navigation">
+            <button onclick="navigationClick()"class="red-circle"></button>
+            <button onclick="navigationClick()"class="yellow-circle"></button>
+            <button onclick="navigationClick()"class="green-circle"></button>
+        </div>
+        <div class="screen">
+            <h2 id="answer" class="nowrap">0</h2>
+        </div>
+        <div class="rows">
+            <div class="row">
+                <button onclick="buttonClick('ac')">AC</button>
+                <button onclick="buttonClick('ac')">C</button>
+                <button onclick="buttonClick('%')">%</button>
+                <button onclick="buttonclick('/')">/</button>
+            </div>
+            <div class="row">
+                <button onclick="buttonClick('7')">7</button>
+                <button onclick="buttonClick('8')">8</button>
+                <button onclick="buttonClick('9')">9</button>
+                <button onclick="buttonClick('x')">*</button>
+            </div>
+            <div class="row">
+                <button onclick="buttonClick('4')">4</button>
+                <button onclick="buttonClick('5')">5</button>
+                <button onclick="buttonClick('6')">6</button>
+                <button onclick="buttonClick('-')">-</button>
+            </div>
+            <div class="row">
+                <button onclick="buttonClick('1')">1</button>
+                <button onclick="buttonClick('2')">2</button>
+                <button onclick="buttonClick('3')">3</button>
+                <button onclick="buttonClick('+')">+</button>
+            </div>
+            <div class="row">
+                <button onclick="buttonClick('0')">0</button>
+                <button onclick="buttonClick('.')">.</button>
+                <button onclick="buttonClick('equals')">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
